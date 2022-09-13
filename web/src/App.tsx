@@ -1,3 +1,5 @@
+import './'
+
 interface ButtonProps {
   title: string
 }
