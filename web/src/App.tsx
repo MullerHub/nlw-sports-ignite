@@ -1,20 +1,18 @@
-import './'
+import './styles/main.css'
 
-interface ButtonProps {
-  title: string
-}
+import logoImg from './assets/logo-nlw-esports.svg'
 
-function Button(props: ButtonProps) {
-  return <button>{props.title}</button>
-}
 function App() {
   return (
-  <>
-    <div>
-      <Button title="Send 1" />
-      <Button title="Send '-' " />
-    </div>
-  </>
+    <>
+      <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20 ">
+        <img src={logoImg} alt="logo do site" />
+
+        <h1 className="text-6xl text-white font-black mt-20">
+          Seu <span className='text-transparent bg-nlw-gradient bg-clip-text'>duo</span> está aqui.
+        </h1>
+      </div>
+    </>
   )
 }
 
