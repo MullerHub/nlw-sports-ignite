@@ -23,6 +23,7 @@ export function Home() {
         renderItem={({ item }) => <GameCard data={item} />}
         showsHorizontalScrollIndicator={false}
         horizontal
+        contentContainerStyle={styles.contentList}
       />
     </View>
   )
