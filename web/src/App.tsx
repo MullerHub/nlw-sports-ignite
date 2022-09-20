@@ -5,7 +5,6 @@ import { GameBanner } from './components/GameBanner'
 import { CreateAdBanner } from './components/CreateAdBanner'
 import * as Dialog from '@radix-ui/react-dialog'
 import { GameController } from 'phosphor-react'
-import { CreateAdBanner } from './components/CreateAdBanner'
 import { Input } from './components/Form/Input'
 
 function App() {
