@@ -1,7 +1,15 @@
 import { View } from 'react-native'
+import { Background } from '../../components/Background'
 
 import { styles } from './styles'
 
 export function Game() {
-  return <View style={styles.container}></View>
+  return (
+    <>
+      <Background>
+        <View style={styles.container}></View>
+      </Background>
+      z
+    </>
+  )
 }
