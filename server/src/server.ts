@@ -29,7 +29,7 @@ app.get('/games', async (request, response) => {
 })
 
 
-app.post('/game/:id/ads', async (request, response) => {
+app.post('/games/:id/ads', async (request, response) => {
   const gameId = request.params.id;
   const body: any = request.body;
 
