@@ -3,7 +3,7 @@ import { Background } from '../../components/Background'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { styles } from './styles'
 import { GameParams } from '../../@types/navigation'
-import { TouchableOpacity, View, Image, FlatList } from 'react-native'
+import { TouchableOpacity, View, Image, FlatList, Text } from 'react-native'
 import { Entypo } from '@expo/vector-icons'
 import { THEME } from '../../theme'
 import logoImg from '../../assets/logo-nlw-esports.png'
@@ -59,7 +59,18 @@ export function Game() {
           <FlatList
             data={duos}
             keyExtractor={item => item.id}
-            renderItem={({ item }) => <DuoCard data={item} />}
+            renderItem={({ item }) => (
+              <DuoCard data={item} onConnect={() => {}} />
+            )}
+            horizontal
+            style={styles.containerList}
+            contentContainerStyle={styles.contentList}
+            showsHorizontalScrollIndicator={false}
+            ListEmptyComponent={() => (
+              <Text style={styles.emptyList}>
+                Não há anuncios publicados ainda.
+              </Text>
+            )}
           />
         </SafeAreaView>
       </Background>
