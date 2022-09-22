@@ -47,7 +47,6 @@ export function Game() {
           />
         </SafeAreaView>
       </Background>
-      z
     </>
   )
 }
