@@ -10,6 +10,7 @@ import logoImg from '../../assets/logo-nlw-esports.png'
 import { Heading } from '../../components/Heading'
 import { DuoCard, DuoCardProps } from '../../components/DuoCard'
 import { useEffect, useState } from 'react'
+import React from 'react'
 
 export function Game() {
   const [duos, setDuos] = useState<DuoCardProps[]>([])
@@ -64,7 +65,9 @@ export function Game() {
             )}
             horizontal
             style={styles.containerList}
-            contentContainerStyle={styles.contentList}
+            contentContainerStyle={[
+              duos.length > 0 ? styles.contentList : styles.emptyListContent
+            ]}
             showsHorizontalScrollIndicator={false}
             ListEmptyComponent={() => (
               <Text style={styles.emptyList}>

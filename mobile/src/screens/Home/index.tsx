@@ -9,6 +9,7 @@ import { Heading } from '../../components/Heading'
 import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native'
 import { DuoCard } from '../../components/DuoCard'
+import React from 'react'
 
 export function Home() {
   const [games, setGames] = useState<GameCardProps[]>([])
