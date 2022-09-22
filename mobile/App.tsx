@@ -10,6 +10,7 @@ import {
 import { Background } from './src/components/Background'
 import { Routes } from './src/routes'
 import { Loading } from './src/components/Loading'
+import { DuoCard } from './src/components/DuoCard'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +23,7 @@ export default function App() {
   return (
     <Background>
       <StatusBar
-        //  barStyle="light-content"
+        barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
