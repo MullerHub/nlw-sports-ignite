@@ -11,7 +11,7 @@ function App() {
   interface IGame {
     id: string
     title: string
-    bannerUrl: string
+    bannerURL: string
     _count: {
       ads: number
     }
@@ -47,7 +47,7 @@ function App() {
               <GameBanner
                 key={game.id}
                 title={game.title}
-                bannerUrl={game.bannerUrl}
+                bannerUrl={game.bannerURL}
                 adsCount={game._count.ads}
               />
             )
